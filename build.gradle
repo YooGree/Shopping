@@ -18,7 +18,9 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	// jdbc Driver (TODO : 의존성 주입 필요)
+	// jdbc Driver
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '10.2.0.jre11'
 }
 
 tasks.named('test') {
